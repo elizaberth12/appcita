@@ -1,0 +1,12 @@
+# Node modules
+node_modules/
+
+# Archivos de entorno
+.env
+
+# Carpeta de producción (si usas Vite o similar)
+dist/
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db

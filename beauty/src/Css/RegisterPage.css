@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f48fb1; /* fondo rosado tipo mockup */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+ 
+.register-container {
+  background-color: #f29bb8;
+  padding: 40px 50px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+}
+
+.register-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #333;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.register-form input {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 20px;
+  border: 1.5px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  background-color: #fdfdfd;
+  transition: border 0.3s ease;
+}
+
+.register-form input:focus {
+  outline: none;
+  border-color: #000000;
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.1);
+}
+
+.register-btn {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 14px;
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.register-btn:hover {
+  background-color: #333333;
+}
+
+.login-link {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 14px;
+  color: #222;
+}
+
+.login-link a {
+  color: #000000;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.error-message {
+  background-color: #ffe5e5;
+  color: #d8000c;
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  margin-bottom: 16px;
+  text-align: left;
+}
+
+/* ============================= */
+/* RESPONSIVE STYLES            */
+/* ============================= */
+
+@media (max-width: 768px) {
+  .register-container {
+    padding: 30px 25px;
+    max-width: 90%;
+  }
+
+  .register-title {
+    font-size: 22px;
+  }
+
+  .register-form input {
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  .register-btn {
+    padding: 12px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .register-container {
+    padding: 25px 20px;
+  }
+
+  .register-title {
+    font-size: 20px;
+  }
+
+  .login-link {
+    font-size: 13px;
+  }
+}

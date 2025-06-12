@@ -1,0 +1,74 @@
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #f48fb1 !important;
+}
+.home-container {
+  display: flex;
+  height: 100vh;
+  width: 150%;
+  background-color: #f48fb1; /* fondo rosado completo */
+  font-family: 'Poppins', sans-serif;
+  overflow: hidden;
+}
+
+/* Lado izquierdo */
+.home-left {
+  flex: 1;
+  background-color: #f48fb1; /* Blanco para cubrir toda esa sección */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.home-left-image {
+  max-width: 250px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+}
+
+.home-text {
+  text-align: center;
+}
+
+.home-title {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #111;
+}
+
+.home-slogan {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.home-button {
+  background-color: #090909;
+  color: #fff;
+  padding: 14px 26px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.home-button:hover {
+  background-color: #333;
+}
+
+/* Lado derecho con fondo */
+.home-right {
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}

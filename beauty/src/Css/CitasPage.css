@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+  background-color: #FFF0F5; /* Fondo rosa pastel */
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.citas-container {
+  background: #FFE4EC; /* Rosa claro */
+  border-radius: 16px;
+  padding: 2rem 2.5rem;
+  width: 90%;
+  max-width: 720px;
+  margin: 2rem auto;
+  box-shadow: 0 8px 20px rgba(255, 107, 157, 0.3);
+}
+
+.citas-title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #FF6B9D;
+  margin-bottom: 1rem;
+  text-align: center;
+  text-shadow: 0 1px 3px rgba(255, 107, 157, 0.4);
+}
+
+.nueva-cita-btn {
+  display: inline-block;
+  color: #FF6B9D;
+  font-weight: 600;
+  text-decoration: none;
+  margin-bottom: 1.8rem;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.nueva-cita-btn:hover {
+  color: #FF4785;
+  text-decoration: underline;
+}
+
+.filtro-estado {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+  gap: 0.8rem;
+  font-weight: 500;
+  color: #555;
+  font-size: 1rem;
+}
+
+.filtro-estado select {
+  background-color: #fff;
+  border: 2px solid #FF6B9D;
+  border-radius: 12px;
+  color: #333;
+  padding: 0.4rem 0.8rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+.filtro-estado select:hover,
+.filtro-estado select:focus {
+  border-color: #FF4785;
+  outline: none;
+  box-shadow: 0 0 6px 2px rgba(255, 71, 133, 0.3);
+}
+
+.mensaje-vacio {
+  font-size: 1.1rem;
+  color: #777;
+  text-align: center;
+  padding: 1.5rem 0;
+  font-style: italic;
+  border-top: 1px solid #ddd;
+}
+
+.cita-card {
+  background: #fff;
+  border-left: 5px solid #FF6B9D;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(255, 107, 157, 0.1);
+}
+
+.cita-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.cita-date,
+.cita-description,
+.cita-status {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 0.3rem;
+}
+
+.cita-actions button {
+  margin-right: 0.6rem;
+  padding: 0.4rem 0.8rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #FF6B9D;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.cita-actions button:hover {
+  background-color: #FF4785;
+}
+
+.paginacion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.paginacion button {
+  background-color: #FF6B9D;
+  color: #fff;
+  border: none;
+  padding: 0.4rem 1rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.paginacion button:disabled {
+  background-color: #f3b9cb;
+  cursor: not-allowed;
+}
+
+/* Modal */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.cerrar-modal {
+  background-color: #FF6B9D;
+  border: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
